@@ -55,6 +55,21 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* Your Bot Army */
+.bot-army {
+  background-color: rgb(42, 66, 216);
+  min-height: 25em !important;
+}
+
+.bot-card:hover {
+  cursor: pointer;
+}
+
+/* xmark styling */
+.xmark-box:hover {
+  background-color: #ebebeb;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
