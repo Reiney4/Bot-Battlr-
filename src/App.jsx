@@ -9,7 +9,7 @@ function App() {
   const [botArmy, setBotArmy] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:3000/bots').then((res) => res.json()).then((data) => {
+    fetch('https://api.npoint.io/cef76c342ebde482885c/bots/').then((res) => res.json()).then((data) => {
         setOriginalBots(data)
     })
 }, [])
