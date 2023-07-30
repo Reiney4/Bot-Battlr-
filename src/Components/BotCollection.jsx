@@ -8,7 +8,7 @@ function BotCollection({ originalBots, botArmy, setBotArmy, displayBots }) {
             return bot.id === botId
         })
 
-        // *some* returns true if clicked bot is in army otherwise returns false
+        // *some* returns false if clicked bot is not in army otherwise returns true
         const clickedBotIsInArmy = botArmy.some((bot) => {
             return bot.id === botId
         })
