@@ -10,8 +10,9 @@ This is the Bot Battlr  app, a React application that displays a list of bots.
 * Authors info
 
 # DESCRIPTION
-The Bot-Battlr  mini  web app fetches data from an API and dynamically manipulates the DOM to display a list of bots.It contains a bot collection to add new transactions. However, the transaction does not have to be persisted to the backend.
-It also contains a search button that filter transactions matching the description searched. 
+The Bot-Battlr  mini  web app fetches data from an API and dynamically manipulates the DOM to display a list of bots.
+It contains a bot collection and a bot army where a user can add or delete a bot to the bot army.
+It also contains a botSpecs with react-icons  and a user can ch1    ``
 
 # Installation process
 
