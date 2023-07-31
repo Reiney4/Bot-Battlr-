@@ -1,7 +1,7 @@
 # Bot-Battlr-
 
-This is the Bank-of-Flatiron mini web app, a React application that 
-displays a list of your recent bank transactions, among other features.
+This is the Bot Battlr  app, a React application that displays a list of bots.
+
 ## Table of content
 * Description 
 * Installation requirement
@@ -10,8 +10,7 @@ displays a list of your recent bank transactions, among other features.
 * Authors info
 
 # DESCRIPTION
-The Bank-of-Flatiron mini  web app fetches data from an API and dynamically manipulates the DOM to display bank transactrions.
-It contains a form to add new transactions. However, the transaction does not have to be persisted to the backend.
+The Bot-Battlr  mini  web app fetches data from an API and dynamically manipulates the DOM to display a list of bots.It contains a bot collection to add new transactions. However, the transaction does not have to be persisted to the backend.
 It also contains a search button that filter transactions matching the description searched. 
 
 # Installation process
