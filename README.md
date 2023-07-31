@@ -12,7 +12,7 @@ This is the Bot Battlr  app, a React application that displays a list of bots.
 # DESCRIPTION
 The Bot-Battlr  mini  web app fetches data from an API and dynamically manipulates the DOM to display a list of bots.
 It contains a bot collection and a bot army where a user can add or delete a bot to the bot army.
-It also contains a botSpecs with react-icons  and a user can ch1    ``
+It also contains a botSpecs with react-icons  and a user can choose to enlist the bot to botArmy or to go back to bots collections.
 
 # Installation process
 
@@ -35,7 +35,7 @@ It also contains a botSpecs with react-icons  and a user can ch1    ``
 ## Backend
 * Install the json-server using the command `npm install -g json-server`
 * To get backend started run this command `json-server --watch db.json`
-* Test your server by visting this route in the browser `http://localhost:3000/transactions`
+* Test your server by visting this route in the browser `https://api.npoint.io/f00577dbaab0488ccfcd/bots/`
 
 
 # TECHNOLOGY USED
