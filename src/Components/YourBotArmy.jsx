@@ -10,7 +10,7 @@ function YourBotArmy({ botArmy, setBotArmy, displayBots }) {
 
         setBotArmy(updatedBotArmy);
     }
-
+// display bot army in component
     return (
         <div className="p-10">
             <h3>Bot Army</h3>
