@@ -14,7 +14,7 @@ function YourBotArmy({ botArmy, setBotArmy, displayBots }) {
     return (
         <div className="p-10">
             <h3>Bot Army</h3>
-            <div className="row row-cols-1 row-cols-md-5 g-3 m-4 pb-3 h-100 px-3 bot-army">
+            <div className="row row-cols-1 row-cols-md-5 g-3 m-1 my-4 pb-3 h-100 px-3 bot-army">
                 {displayBots(botArmy, handleBotArmyClick)}
             </div>
         </div>

@@ -1,24 +1,14 @@
-import {useEffect, useState} from "react";
+import { useNavigate } from "react-router-dom";
 
-function BotCollection({ originalBots, botArmy, setBotArmy, displayBots }) {
+function BotCollection({ originalBots, displayBots }) {
+    // initialize navigate function for routing to taking to a given path or page
+    const navigate = useNavigate();
+
     const handleBotClick = (botId) => {
-    
-        // *find* returns the entire item (bot) if condition passes (bot id matches)
-        const clickedBot = originalBots.find((bot) => {
-            return bot.id === botId
-        })
-
-        // *some* returns false if clicked bot is not in army otherwise returns true
-        const clickedBotIsInArmy = botArmy.some((bot) => {
-            return bot.id === botId
-        })
-
-        // use ! (not operator) to see if clickedBot is not in army (return opposite)
-        if (!clickedBotIsInArmy) {
-           setBotArmy([...botArmy, clickedBot])
-        }
+        // the function called takes browser to go to the path i.e https://localhost:5173/${botId}, for example https://localhost:5173/104
+        navigate(`/${botId}`)
     }
-    
+
     return (
         <div>
             <h3>Bots Collection</h3>

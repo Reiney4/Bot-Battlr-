@@ -1,15 +1,19 @@
 import { useState, useEffect } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 import './App.css'
 import BotCollection from './Components/BotCollection'
 import YourBotArmy from './Components/YourBotArmy'
 import BotCard from './Components/BotCard'
+import BotSpecs from './Components/BotSpecs'
+
 
 function App() {
   const [originalBots, setOriginalBots] = useState([])
   const [botArmy, setBotArmy] = useState([])
 
   useEffect(() => {
-    fetch('https://api.npoint.io/cef76c342ebde482885c/bots/').then((res) => res.json()).then((data) => {
+    fetch('http://localhost:3000/bots').then((res) => res.json()).then((data) => {
         setOriginalBots(data)
     })
 }, [])
@@ -25,10 +29,15 @@ function App() {
   }
 
   return (
-    <>
+    <BrowserRouter>
       <YourBotArmy botArmy={botArmy} setBotArmy={setBotArmy} displayBots={displayBots}/>
-      <BotCollection originalBots={originalBots} botArmy={botArmy} setBotArmy={setBotArmy} displayBots={displayBots} />
-    </>
+        
+      <Routes>
+        <Route path="/" element={<BotCollection originalBots={originalBots} botArmy={botArmy} setBotArmy={setBotArmy} displayBots={displayBots} />} />
+        {/* the :currentBotId show that anything after / is a value stored in currentBotId variable */}
+        <Route path="/:currentBotId" element={<BotSpecs originalBots={originalBots} botArmy={botArmy} setBotArmy={setBotArmy} />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
