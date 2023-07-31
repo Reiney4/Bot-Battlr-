@@ -8,7 +8,7 @@ function BotCard({ bot, originalBots, handleBotClick, setOriginalBots, setBotArm
     const navigate = useNavigate();
 
     const handleXClick = (botId) => {
-        fetch(`http://localhost:3000/bots/${botId}`, {
+        fetch(`https://api.npoint.io/f00577dbaab0488ccfcd/bots/${botId}`, {
             method: "DELETE"
         }).then(res => res.json())
         .then(() => {
