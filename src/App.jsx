@@ -13,7 +13,7 @@ function App() {
   const [botArmy, setBotArmy] = useState([])
 
   useEffect(() => {
-    fetch('https://api.npoint.io/f00577dbaab0488ccfcd/bots/').then((res) => res.json()).then((data) => {
+    fetch('https://valerie.onrender.com/bots').then((res) => res.json()).then((data) => {
         setOriginalBots(data)
     })
 }, [])
