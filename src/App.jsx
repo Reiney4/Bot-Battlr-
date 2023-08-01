@@ -7,7 +7,7 @@ import YourBotArmy from './Components/YourBotArmy'
 import BotCard from './Components/BotCard'
 import BotSpecs from './Components/BotSpecs'
 
-
+// implemented useState  
 function App() {
   const [originalBots, setOriginalBots] = useState([])
   const [botArmy, setBotArmy] = useState([])
