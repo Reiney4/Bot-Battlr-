@@ -6,6 +6,7 @@ import BotCollection from './Components/BotCollection'
 import YourBotArmy from './Components/YourBotArmy'
 import BotCard from './Components/BotCard'
 import BotSpecs from './Components/BotSpecs'
+import SortBar from './Components/SortBar'
 
 // implemented useState  
 function App() {
