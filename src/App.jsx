@@ -30,9 +30,18 @@ function App() {
   }
 
   return (
+    
+    
+    
     <BrowserRouter>
       <YourBotArmy botArmy={botArmy} setBotArmy={setBotArmy} displayBots={displayBots}/>
-        
+     {/* Render the sort buttons */}
+      <SortBar
+    onSortByHealth={sortBotsByHealth}
+    onSortByDamage={sortBotsByDamage}
+    onSortByArmor={sortBotsByArmor}
+  />
+
       <Routes>
         <Route path="/" element={<BotCollection originalBots={originalBots} botArmy={botArmy} setBotArmy={setBotArmy} displayBots={displayBots} />} />
         {/* the :currentBotId show that anything after / is a value stored in currentBotId variable */}
