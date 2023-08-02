@@ -5,9 +5,9 @@ import React from "react";
         return(
             <div className="sortbar">
                 {/* created buttons to sort the bots */}
-                <button onClick={onSortByHealth}></button>
-                <button onClick={onSortByDamage}></button>
-                <button onCLICK={onSortByArmor}></button>
+                <button onClick={onSortByHealth}>Sort by Health</button>
+                <button onClick={onSortByDamage}>Sort by Damage</button>
+                <button onCLICK={onSortByArmor}>Sort by Armor</button>
             </div>
         );
     };
